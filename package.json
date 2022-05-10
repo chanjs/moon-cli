@@ -1,0 +1,39 @@
+{
+  "name": "react-cli",
+  "version": "1.0.0",
+  "description": "It is a front-end framework for writing react projects.",
+  "main": "index.js",
+  "bin": {
+    "cli": "./bin/cli.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/** --bundle --outdir=lib --platform=node --external:esbuild",
+    "build-cli": "esbuild client/** --bundle --outdir=lib/client --external:esbuild",
+    "dev": "pnpm build-cli && pnpm build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chanjs/react-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chanjs/react-cli/issues"
+  },
+  "homepage": "https://github.com/chanjs/react-cli#readme",
+  "dependencies": {
+    "commander": "^9.2.0",
+    "esbuild": "^0.14.36",
+    "express": "^4.17.3",
+    "portfinder": "^1.0.28",
+    "ws": "^8.5.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.3"
+  }
+}
