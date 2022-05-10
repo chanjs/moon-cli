@@ -1,10 +1,10 @@
 {
-  "name": "react-cli",
+  "name": "moon-cli",
   "version": "1.0.0",
   "description": "It is a front-end framework for writing react projects.",
   "main": "index.js",
   "bin": {
-    "cli": "./bin/cli.js"
+    "moon-cli": "bin/moonCli.js"
   },
   "directories": {
     "lib": "lib"
